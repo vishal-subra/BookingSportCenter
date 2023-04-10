@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMakeBookingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/add_etName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Name"
+                android:paddingStart="8dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Court"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/add_etState"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:hint="Court"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/add_etContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Contact Number"
+                android:textColor="@color/black"
+                android:maxLength="11"
+                android:inputType="number"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/add_etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/add_etDate"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_box"
+                    android:layout_marginTop="8dp"
+                    android:elevation="10dp"
+                    android:hint="Date"
+                    android:textColor="@color/black"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:paddingStart="8dp"/>
+
+                <ImageView
+                    android:id="@+id/add_PickDate"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:src="@drawable/calendar"
+                    android:layout_gravity="center_vertical"
+                    android:elevation="10dp"
+                    android:layout_marginStart="15dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Sport"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/add_etSport"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Sport"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Equipment For Rent - RM10 (Optional)"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/cbFutsalBall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Futsal Ball"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbFrisbee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Netball Ball"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbNetball"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frisbee"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbShuttle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shuttle"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Time ( RM35 - 1 HOUR )"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--10-->
+                <CheckBox
+                    android:id="@+id/cb10Am"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10Am-11Am"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--11-->
+                <CheckBox
+                    android:id="@+id/cb11Am"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11Am-12Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--12-->
+                <CheckBox
+                    android:id="@+id/cb12Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12Pm-1Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--1-->
+                <CheckBox
+                    android:id="@+id/cb1Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1Pm-2Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--2-->
+                <CheckBox
+                    android:id="@+id/cb2Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2Pm-3Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--3-->
+                <CheckBox
+                    android:id="@+id/cb3Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3Pm-4Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--4-->
+                <CheckBox
+                    android:id="@+id/cb4Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4Pm-5Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--5-->
+                <CheckBox
+                    android:id="@+id/cb5Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5Pm-6Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--6-->
+                <CheckBox
+                    android:id="@+id/cb6Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6Pm-7Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--7-->
+                <CheckBox
+                    android:id="@+id/cb7Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7Pm-8Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--8-->
+                <CheckBox
+                    android:id="@+id/cb8Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8Pm-9Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <!--9-->
+                <CheckBox
+                    android:id="@+id/cb9Pm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9Pm-10Pm"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/purple"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/purple"
+        android:layout_alignParentBottom="true"
+        app:itemRippleColor="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:itemBackground="@color/purple"
+        app:menu="@menu/navigation_items" />
+
+</RelativeLayout>

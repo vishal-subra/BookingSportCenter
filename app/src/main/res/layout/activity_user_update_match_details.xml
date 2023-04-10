@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserUpdateMatchDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/rbtnDelete"
+                android:layout_width="32dp"
+                android:layout_height="42dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_baseline_delete_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Host Name"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/add_etName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Name"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select State"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/add_etState"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:hint="State"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/add_etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_box"
+                    android:layout_marginTop="8dp"
+                    android:elevation="10dp"
+                    android:hint="Date"
+                    android:textColor="@color/black"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:paddingStart="8dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Sport"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/add_etSport"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:hint="Sport"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp" />
+
+            <EditText
+                android:id="@+id/etGameStatus"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:hint="Status"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Court"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/etCourt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:enabled="false"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:elevation="10dp"
+                android:hint="Court"
+                android:paddingStart="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Time"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/add_etSelectedTime"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Selected Time"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Max Number"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/etPeopleNumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:elevation="10dp"
+                android:hint="Max Number"
+                android:paddingStart="8dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/white"
+                android:background="@color/purple"
+                android:layout_marginStart="10dp"
+                android:textSize="18dp"
+                android:layout_marginEnd="10dp"
+                android:text="Update"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

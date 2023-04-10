@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserViewBookingDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/add_etName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Name"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select State"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/add_etState"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:elevation="10dp"
+                android:hint="State"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/add_etContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:hint="Contact Number"
+                android:maxLength="11"
+                android:inputType="number"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/add_etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:hint="Email"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/add_etDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_box"
+                    android:layout_marginTop="8dp"
+                    android:elevation="10dp"
+                    android:hint="Date"
+                    android:textColor="@color/black"
+                    android:inputType="date"
+                    android:enabled="false"
+                    android:paddingStart="8dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Sport"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/add_etSport"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:hint="Sport"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Equipment For Rent"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/add_etRentItems"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Rented Items"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selected Time"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/add_etSelectedTime"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:hint="Selected Time"
+                android:textColor="@color/black"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/add_etStatus"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:hint="Status"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Fee (RM)"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/add_etFee"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:hint="Fee"
+                android:enabled="false"
+                android:paddingStart="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Court"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/etCourt"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:enabled="false"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:elevation="10dp"
+                android:hint="Court"
+                android:paddingStart="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remark"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginStart="12dp"
+                android:textSize="17dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/add_etRemark"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_box"
+                android:layout_marginTop="8dp"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                android:hint="Remark"
+                android:enabled="false"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="30dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create Match Group"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginStart="12dp"
+                        android:textSize="18dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Max Number"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginStart="12dp"
+                        android:textSize="17dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <EditText
+                        android:id="@+id/etPeopleNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/border_box"
+                        android:elevation="10dp"
+                        android:hint="Max Number"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Match Status"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:layout_marginStart="12dp"
+                        android:textSize="17dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp" />
+
+                    <EditText
+                        android:id="@+id/etMatchStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/border_box"
+                        android:elevation="10dp"
+                        android:hint="Match Status"
+                        android:enabled="false"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="@color/white"
+                        android:background="@color/purple"
+                        android:layout_marginStart="10dp"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Submit"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

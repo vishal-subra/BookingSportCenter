@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomeActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/hsv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnViewAll"
+                android:layout_marginStart="10dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:background="@color/transparent"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnPending"
+                android:layout_marginStart="10dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:background="@color/Classic_Blue"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnAccepted"
+                android:layout_marginStart="10dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Accepted"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:background="@color/Greenery"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnRejected"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="200dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:text="Rejected"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:background="@color/True_Red"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hsv"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/show_post" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/purple"
+        android:layout_alignParentBottom="true"
+        app:itemRippleColor="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:itemBackground="@color/purple"
+        app:menu="@menu/navigation_items" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_location_24"
+        android:layout_above="@id/bottomView"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/map"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/Greenery"/>
+
+</RelativeLayout>

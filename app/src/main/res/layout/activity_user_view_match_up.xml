@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserViewMatchUpActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewMyMatch"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/bottomView"
+        tools:listitem="@layout/show_post_3" />
+
+    <Button
+        android:id="@+id/btnViewMyMatch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="My Match Up"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="17dp"
+        android:background="@color/transparent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/baseline_history_24"
+        android:layout_above="@id/bottomView"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/history"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/purple"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/purple"
+        android:layout_alignParentBottom="true"
+        app:itemRippleColor="@color/white"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
+        app:itemBackground="@color/purple"
+        app:menu="@menu/navigation_items" />
+
+</RelativeLayout>

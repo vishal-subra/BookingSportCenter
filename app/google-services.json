@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "154874299443",
+    "firebase_url": "https://sport-center-booking-default-rtdb.firebaseio.com",
+    "project_id": "sport-center-booking",
+    "storage_bucket": "sport-center-booking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154874299443:android:0e80d055509713ab99cf46",
+        "android_client_info": {
+          "package_name": "com.example.sportcenterv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154874299443-8ci35tc3ujcbrpogcunh03jsntlrv18q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sportcenterv1",
+            "certificate_hash": "36f160fcc498f5dbf0cf991f23d7a9bf2515e68f"
+          }
+        },
+        {
+          "client_id": "154874299443-nq5ct5agr4euhcjkh7433cgojvbn307n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYL9XZNH9HRfF4ypl7GV8knF7He19Hack"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154874299443-nq5ct5agr4euhcjkh7433cgojvbn307n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154874299443:android:275744485cf5363a99cf46",
+        "android_client_info": {
+          "package_name": "com.example.sportcenterv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154874299443-7js6er2fl9uhjo5pokjhvcq8g64avr2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sportcenterv2",
+            "certificate_hash": "9db91d3af24741fa74f743655242691c0e209caf"
+          }
+        },
+        {
+          "client_id": "154874299443-nq5ct5agr4euhcjkh7433cgojvbn307n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYL9XZNH9HRfF4ypl7GV8knF7He19Hack"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154874299443-nq5ct5agr4euhcjkh7433cgojvbn307n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

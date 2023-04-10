@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Classic_Blue">#34568B</color>
+    <color name="Living_Coral">#FF6F61</color>
+    <color name="Ultra_Violet">#6B5B95</color>
+    <color name="Greenery">#88B04B</color>
+    <color name="Rose_Quartz">#F7CAC9</color>
+    <color name="Serenity">#92A8D1</color>
+    <color name="Marsala">#955251</color>
+    <color name="Radiand_Orchid">#B565A7</color>
+    <color name="Emerald">#009B77</color>
+    <color name="Tangerine_Tango">#DD4124</color>
+    <color name="Honeysucle">#D65076</color>
+    <color name="Turquoise">#45B8AC</color>
+    <color name="Mimosa">#EFC050</color>
+    <color name="Blue_Izis">#5B5EA6</color>
+    <color name="Chili_Pepper">#9B2335</color>
+    <color name="Sand_Dollar">#DFCFBE</color>
+    <color name="Blue_Turquoise">#55B4B0</color>
+    <color name="Tigerlily">#E15D44</color>
+    <color name="Aqua_Sky">#7FCDCD</color>
+    <color name="True_Red">#BC243C</color>
+    <color name="Fuchsia_Rose">#C3447A</color>
+    <color name="Cerulean_Blue">#98B4D4</color>
+    <color name="gray">#808080</color>
+    <color name="transparent">#00000000</color>
+    <color name="Wheat">#f5deb3</color>
+    <color name="purple">#6850da</color>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_below="@id/cardView"
+        android:id="@+id/Tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Playground No. 6"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv1"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Book Your Sport Court Here"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_above="@id/Ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/Tv2"
+        android:layout_marginTop="25sp">
+
+        <EditText
+            android:id="@+id/login_etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_outline_email_24"
+            android:textColorHint="@color/gray"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/border_box"
+            android:paddingEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/login_etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:paddingStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:drawableEnd="@drawable/ic_outline_lock_24"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/border_box"
+            android:paddingEnd="10dp"/>
+
+        <Button
+            android:id="@+id/login_BtnForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ForgotPassword? "
+            android:background="@color/transparent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="3dp"/>
+
+        <Button
+            android:id="@+id/login_BtnLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@color/purple"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account Here..."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:id="@+id/login_BtnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Register"
+            android:textColor="@color/True_Red"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

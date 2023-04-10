@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeId"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/AddId"
+        android:icon="@drawable/plus"
+        android:title="Add"/>
+
+    <item android:id="@+id/MatchId"
+        android:icon="@drawable/people"
+        android:title="MatchUp"/>
+
+    <item android:id="@+id/profileId"
+        android:icon="@drawable/user"
+        android:title="Profile"/>
+
+
+</menu>
